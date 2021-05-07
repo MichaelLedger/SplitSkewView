@@ -1,0 +1,6 @@
+framework module Pods_SplitSkewDemo {
+  umbrella header "Pods-SplitSkewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

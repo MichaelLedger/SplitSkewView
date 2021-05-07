@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004DE4903C03549C2271BB61E7B96417 /* BCMeshBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A31C1073E2CC6C0564D8865768533 /* BCMeshBuffer.m */; };
+		0CE04286521DCBCDE4554CA1DCD09362 /* BCMeshTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D85ECDDEEA6955CC6A63C9C0899553 /* BCMeshTexture.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14D3501FDF24A42EEBED30C91569CFEA /* Pods-SplitSkewDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE5D3F7AED5248226B2951DB3625A24 /* Pods-SplitSkewDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373556618F9AE97A29A0B1B99CFE3EDF /* BCMeshShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A9C4CD937CBEE430BF2317AAA0E0B96A /* BCMeshShader.vsh */; };
+		3894DCC19C0C9923062BEC35C4ECA779 /* BCMutableMeshTransform+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 6406DEA1414566B23B7F1FF187E18263 /* BCMutableMeshTransform+Convenience.m */; };
+		3D4DF4C66018C1314F097933E3E6E959 /* BCMeshTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1580332BF6526C02AD60F04AA646BD26 /* BCMeshTexture.m */; };
+		4D82D3125787B42A16658E1D7E7BED59 /* BCMeshTransformAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 707D18DAC2B37D5CFA83687F0F9C178C /* BCMeshTransformAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		526EE91D98E4CDD83BBBE8E885D51939 /* BCMeshTransform+Interpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA4B4417860888B55327E8331DB2D2 /* BCMeshTransform+Interpolation.m */; };
+		59F8F1CFC01E4D29AD4290321DA604C0 /* BCMeshShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A025E77199B6DA1C2C7B6694EAA507F1 /* BCMeshShader.fsh */; };
+		5B1034BC93C145FC1C868CD7FED55F75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B8F7DD83D64FBCA45CA6EA5A071BB /* Foundation.framework */; };
+		5C587038C3C89922039CE949E91AA33E /* BCMeshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8BF3CD95679655564675DEAB3CC967 /* BCMeshContentView.m */; };
+		606801B1CA30724B72525C4DFD315155 /* BCMeshTransform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96CDF40935E4213165F4B6F2F7CBEE45 /* BCMeshTransform.mm */; };
+		62D6E351F485001BF915D61E9B33DFE5 /* BCMeshTransformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5954FD81A3A3A7AA9BAC6DAFBF0822A7 /* BCMeshTransformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6578EA93253CF2751212A94FF507D0F7 /* BCMutableMeshTransform+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D56EC46C3BC17BA1FFCA2F31A2D8CB7 /* BCMutableMeshTransform+Convenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AB4B588210108626EFB86E1933AA32D /* BCMeshTransformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB4980F94FE2B9BF456BD31A49B8774 /* BCMeshTransformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783806795DB0FCAA17E820EC85DF4580 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018232B0D85BB7B3BBCF4809CB4A4938 /* GLKit.framework */; };
+		7BCA65B4F2C737320D6C7D73E806C03A /* BCMeshTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C8CF7292BDE4E5C9B7B6CFBD7582F1 /* BCMeshTransformView.m */; };
+		8DB4655B5DDEA6E4413F3E33E911ADF3 /* BCMeshTransformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF126CAFC6F5632619D5E6E2C6273DC /* BCMeshTransformView-dummy.m */; };
+		A3AC120032C7723E945088143C980D5F /* BCMeshShader.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE61373173806D4767A5E60EC267646 /* BCMeshShader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA3B4431CECE368BE8CC13ADA40C00E8 /* BCMeshShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B6991EA3ECD7AC878746164483C5572C /* BCMeshShader.m */; };
+		C37F2569FF694D12E7E8380B7B6C6415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B8F7DD83D64FBCA45CA6EA5A071BB /* Foundation.framework */; };
+		DB3B7FBBFA882EA10C3FDDBB2B7E3684 /* BCMeshTransform+Interpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C40AE998BEC26445095B68032866340 /* BCMeshTransform+Interpolation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE8F77A613C36F8AFC546FF1876D271C /* Pods-SplitSkewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E20663A42141823975DD72140457023F /* Pods-SplitSkewDemo-dummy.m */; };
+		EFB630B5707C9896FD53431CDA4173D5 /* BCMeshBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 323B9B3564418E766F4FD476776A849E /* BCMeshBuffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F9AB4AFC67687DEB44EF7458AF33EFEC /* BCMeshContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7391E3014EE59653FD3C2A7011EDA5 /* BCMeshContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE6C70DD3D4D7B09807CA13F50DAC6E2 /* BCMeshTransformAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C319C042463F4D3D6EA8E406D2997 /* BCMeshTransformAnimation.m */; };
+		FEAB27CB549AC98AB49ED07BDCCE7706 /* BCMeshTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B965372C0016785D7D2D5817B8B7B0 /* BCMeshTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CC83A62D288AB18F307E47FCA11BA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB18A4843CE0958161011345ECA1750C;
+			remoteInfo = BCMeshTransformView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018232B0D85BB7B3BBCF4809CB4A4938 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		0B768AE1BB220E6E96F585AFE8CAD882 /* BCMeshTransformView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BCMeshTransformView-Info.plist"; sourceTree = "<group>"; };
+		1580332BF6526C02AD60F04AA646BD26 /* BCMeshTexture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCMeshTexture.m; path = BCMeshTransformView/BCMeshTexture.m; sourceTree = "<group>"; };
+		1D56EC46C3BC17BA1FFCA2F31A2D8CB7 /* BCMutableMeshTransform+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BCMutableMeshTransform+Convenience.h"; path = "BCMeshTransformView/BCMutableMeshTransform+Convenience.h"; sourceTree = "<group>"; };
+		20FD477226B33BBC2DFAC000BFFF0FEB /* Pods-SplitSkewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplitSkewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		219C319C042463F4D3D6EA8E406D2997 /* BCMeshTransformAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCMeshTransformAnimation.m; path = BCMeshTransformView/BCMeshTransformAnimation.m; sourceTree = "<group>"; };
+		22D454C31508EB05B6B1638F3FCBC024 /* BCMeshTransformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BCMeshTransformView.modulemap; sourceTree = "<group>"; };
+		2AB2DC6C96EADD8B5E9A7311BFB37B4C /* Pods-SplitSkewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplitSkewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		323B9B3564418E766F4FD476776A849E /* BCMeshBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshBuffer.h; path = BCMeshTransformView/BCMeshBuffer.h; sourceTree = "<group>"; };
+		32C8CF7292BDE4E5C9B7B6CFBD7582F1 /* BCMeshTransformView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCMeshTransformView.m; path = BCMeshTransformView/BCMeshTransformView.m; sourceTree = "<group>"; };
+		347F4513C4B3C78E3BF6069D6938B5D6 /* Pods_SplitSkewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SplitSkewDemo.framework; path = "Pods-SplitSkewDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE5D3F7AED5248226B2951DB3625A24 /* Pods-SplitSkewDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SplitSkewDemo-umbrella.h"; sourceTree = "<group>"; };
+		41D85ECDDEEA6955CC6A63C9C0899553 /* BCMeshTexture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshTexture.h; path = BCMeshTransformView/BCMeshTexture.h; sourceTree = "<group>"; };
+		45FED4029F4EC6C5C75A03F263B72029 /* Pods-SplitSkewDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SplitSkewDemo.modulemap"; sourceTree = "<group>"; };
+		484B8F7DD83D64FBCA45CA6EA5A071BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4FCA4B4417860888B55327E8331DB2D2 /* BCMeshTransform+Interpolation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "BCMeshTransform+Interpolation.m"; path = "BCMeshTransformView/BCMeshTransform+Interpolation.m"; sourceTree = "<group>"; };
+		5954FD81A3A3A7AA9BAC6DAFBF0822A7 /* BCMeshTransformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransformView-umbrella.h"; sourceTree = "<group>"; };
+		5ABFFBBCE76B4E06ACE9F584F65932AF /* Pods-SplitSkewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplitSkewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B0A31C1073E2CC6C0564D8865768533 /* BCMeshBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCMeshBuffer.m; path = BCMeshTransformView/BCMeshBuffer.m; sourceTree = "<group>"; };
+		6406DEA1414566B23B7F1FF187E18263 /* BCMutableMeshTransform+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "BCMutableMeshTransform+Convenience.m"; path = "BCMeshTransformView/BCMutableMeshTransform+Convenience.m"; sourceTree = "<group>"; };
+		6C40AE998BEC26445095B68032866340 /* BCMeshTransform+Interpolation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BCMeshTransform+Interpolation.h"; path = "BCMeshTransformView/BCMeshTransform+Interpolation.h"; sourceTree = "<group>"; };
+		707D18DAC2B37D5CFA83687F0F9C178C /* BCMeshTransformAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshTransformAnimation.h; path = BCMeshTransformView/BCMeshTransformAnimation.h; sourceTree = "<group>"; };
+		79F71454EAF151379D1B7C4392C84D78 /* BCMeshTransformView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BCMeshTransformView.release.xcconfig; sourceTree = "<group>"; };
+		7A2DFA1E5B189DF9FA7DA744F7EBBCE7 /* Pods-SplitSkewDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplitSkewDemo-Info.plist"; sourceTree = "<group>"; };
+		7C7391E3014EE59653FD3C2A7011EDA5 /* BCMeshContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshContentView.h; path = BCMeshTransformView/BCMeshContentView.h; sourceTree = "<group>"; };
+		7F0A945989EB14DD2B8EC70E54E14806 /* Pods-SplitSkewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SplitSkewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F8BF3CD95679655564675DEAB3CC967 /* BCMeshContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCMeshContentView.m; path = BCMeshTransformView/BCMeshContentView.m; sourceTree = "<group>"; };
+		8FB4980F94FE2B9BF456BD31A49B8774 /* BCMeshTransformView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshTransformView.h; path = BCMeshTransformView/BCMeshTransformView.h; sourceTree = "<group>"; };
+		96CDF40935E4213165F4B6F2F7CBEE45 /* BCMeshTransform.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = BCMeshTransform.mm; path = BCMeshTransformView/BCMeshTransform.mm; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A025E77199B6DA1C2C7B6694EAA507F1 /* BCMeshShader.fsh */ = {isa = PBXFileReference; includeInIndex = 1; name = BCMeshShader.fsh; path = BCMeshTransformView/BCMeshShader.fsh; sourceTree = "<group>"; };
+		A09F3535C11B50029ADECE88B02250B4 /* BCMeshTransformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BCMeshTransformView.framework; path = BCMeshTransformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92D19AC44AD2B201BE8E7BABC41EBAF /* BCMeshTransformView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BCMeshTransformView.debug.xcconfig; sourceTree = "<group>"; };
+		A9C4CD937CBEE430BF2317AAA0E0B96A /* BCMeshShader.vsh */ = {isa = PBXFileReference; includeInIndex = 1; name = BCMeshShader.vsh; path = BCMeshTransformView/BCMeshShader.vsh; sourceTree = "<group>"; };
+		AFF126CAFC6F5632619D5E6E2C6273DC /* BCMeshTransformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BCMeshTransformView-dummy.m"; sourceTree = "<group>"; };
+		B4FC88C3B6BEF8BDC7DAD75522BBB005 /* BCMeshTransformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransformView-prefix.pch"; sourceTree = "<group>"; };
+		B6991EA3ECD7AC878746164483C5572C /* BCMeshShader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCMeshShader.m; path = BCMeshTransformView/BCMeshShader.m; sourceTree = "<group>"; };
+		B7B965372C0016785D7D2D5817B8B7B0 /* BCMeshTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshTransform.h; path = BCMeshTransformView/BCMeshTransform.h; sourceTree = "<group>"; };
+		DBC78C6645A45A5F164D4D39438E0510 /* Pods-SplitSkewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplitSkewDemo-frameworks.sh"; sourceTree = "<group>"; };
+		E20663A42141823975DD72140457023F /* Pods-SplitSkewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SplitSkewDemo-dummy.m"; sourceTree = "<group>"; };
+		EAE61373173806D4767A5E60EC267646 /* BCMeshShader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCMeshShader.h; path = BCMeshTransformView/BCMeshShader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8793FB5F7740A59DCB45B4B994FE8C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1034BC93C145FC1C868CD7FED55F75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2501019AAEE10FEFD86AFE8747F7AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37F2569FF694D12E7E8380B7B6C6415 /* Foundation.framework in Frameworks */,
+				783806795DB0FCAA17E820EC85DF4580 /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D2D21E2AF48FD35E0E64FFF7034B38 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				484B8F7DD83D64FBCA45CA6EA5A071BB /* Foundation.framework */,
+				018232B0D85BB7B3BBCF4809CB4A4938 /* GLKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D2D21E2AF48FD35E0E64FFF7034B38 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2019DBB1F23D9DAD4C08C4E8F7F78C84 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFEC64A3B9FFDED81120EBADBF470090 /* Pods-SplitSkewDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DEC4BE5761963AFD12063925533E112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A09F3535C11B50029ADECE88B02250B4 /* BCMeshTransformView.framework */,
+				347F4513C4B3C78E3BF6069D6938B5D6 /* Pods_SplitSkewDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4199AB3421DBEAEEF2AB174EEFBA6483 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22D454C31508EB05B6B1638F3FCBC024 /* BCMeshTransformView.modulemap */,
+				AFF126CAFC6F5632619D5E6E2C6273DC /* BCMeshTransformView-dummy.m */,
+				0B768AE1BB220E6E96F585AFE8CAD882 /* BCMeshTransformView-Info.plist */,
+				B4FC88C3B6BEF8BDC7DAD75522BBB005 /* BCMeshTransformView-prefix.pch */,
+				5954FD81A3A3A7AA9BAC6DAFBF0822A7 /* BCMeshTransformView-umbrella.h */,
+				A92D19AC44AD2B201BE8E7BABC41EBAF /* BCMeshTransformView.debug.xcconfig */,
+				79F71454EAF151379D1B7C4392C84D78 /* BCMeshTransformView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BCMeshTransformView";
+			sourceTree = "<group>";
+		};
+		4527F3C3F43F08E9F7783D326D906F03 /* BCMeshTransformView */ = {
+			isa = PBXGroup;
+			children = (
+				323B9B3564418E766F4FD476776A849E /* BCMeshBuffer.h */,
+				5B0A31C1073E2CC6C0564D8865768533 /* BCMeshBuffer.m */,
+				7C7391E3014EE59653FD3C2A7011EDA5 /* BCMeshContentView.h */,
+				7F8BF3CD95679655564675DEAB3CC967 /* BCMeshContentView.m */,
+				EAE61373173806D4767A5E60EC267646 /* BCMeshShader.h */,
+				B6991EA3ECD7AC878746164483C5572C /* BCMeshShader.m */,
+				41D85ECDDEEA6955CC6A63C9C0899553 /* BCMeshTexture.h */,
+				1580332BF6526C02AD60F04AA646BD26 /* BCMeshTexture.m */,
+				B7B965372C0016785D7D2D5817B8B7B0 /* BCMeshTransform.h */,
+				96CDF40935E4213165F4B6F2F7CBEE45 /* BCMeshTransform.mm */,
+				6C40AE998BEC26445095B68032866340 /* BCMeshTransform+Interpolation.h */,
+				4FCA4B4417860888B55327E8331DB2D2 /* BCMeshTransform+Interpolation.m */,
+				707D18DAC2B37D5CFA83687F0F9C178C /* BCMeshTransformAnimation.h */,
+				219C319C042463F4D3D6EA8E406D2997 /* BCMeshTransformAnimation.m */,
+				8FB4980F94FE2B9BF456BD31A49B8774 /* BCMeshTransformView.h */,
+				32C8CF7292BDE4E5C9B7B6CFBD7582F1 /* BCMeshTransformView.m */,
+				1D56EC46C3BC17BA1FFCA2F31A2D8CB7 /* BCMutableMeshTransform+Convenience.h */,
+				6406DEA1414566B23B7F1FF187E18263 /* BCMutableMeshTransform+Convenience.m */,
+				94199FC0CCD3E2FD8944C167682A75C6 /* Resources */,
+				4199AB3421DBEAEEF2AB174EEFBA6483 /* Support Files */,
+			);
+			name = BCMeshTransformView;
+			path = BCMeshTransformView;
+			sourceTree = "<group>";
+		};
+		89047BF218EB9BE8D95A16A483EB2D96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4527F3C3F43F08E9F7783D326D906F03 /* BCMeshTransformView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94199FC0CCD3E2FD8944C167682A75C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A025E77199B6DA1C2C7B6694EAA507F1 /* BCMeshShader.fsh */,
+				A9C4CD937CBEE430BF2317AAA0E0B96A /* BCMeshShader.vsh */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BFEC64A3B9FFDED81120EBADBF470090 /* Pods-SplitSkewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				45FED4029F4EC6C5C75A03F263B72029 /* Pods-SplitSkewDemo.modulemap */,
+				7F0A945989EB14DD2B8EC70E54E14806 /* Pods-SplitSkewDemo-acknowledgements.markdown */,
+				5ABFFBBCE76B4E06ACE9F584F65932AF /* Pods-SplitSkewDemo-acknowledgements.plist */,
+				E20663A42141823975DD72140457023F /* Pods-SplitSkewDemo-dummy.m */,
+				DBC78C6645A45A5F164D4D39438E0510 /* Pods-SplitSkewDemo-frameworks.sh */,
+				7A2DFA1E5B189DF9FA7DA744F7EBBCE7 /* Pods-SplitSkewDemo-Info.plist */,
+				3EE5D3F7AED5248226B2951DB3625A24 /* Pods-SplitSkewDemo-umbrella.h */,
+				2AB2DC6C96EADD8B5E9A7311BFB37B4C /* Pods-SplitSkewDemo.debug.xcconfig */,
+				20FD477226B33BBC2DFAC000BFFF0FEB /* Pods-SplitSkewDemo.release.xcconfig */,
+			);
+			name = "Pods-SplitSkewDemo";
+			path = "Target Support Files/Pods-SplitSkewDemo";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				89047BF218EB9BE8D95A16A483EB2D96 /* Pods */,
+				3DEC4BE5761963AFD12063925533E112 /* Products */,
+				2019DBB1F23D9DAD4C08C4E8F7F78C84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E83354D3D84EEFC814AB36A7DA3B9FBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D3501FDF24A42EEBED30C91569CFEA /* Pods-SplitSkewDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8E44C586D87342DE73A94F5BA87E20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB630B5707C9896FD53431CDA4173D5 /* BCMeshBuffer.h in Headers */,
+				F9AB4AFC67687DEB44EF7458AF33EFEC /* BCMeshContentView.h in Headers */,
+				A3AC120032C7723E945088143C980D5F /* BCMeshShader.h in Headers */,
+				0CE04286521DCBCDE4554CA1DCD09362 /* BCMeshTexture.h in Headers */,
+				DB3B7FBBFA882EA10C3FDDBB2B7E3684 /* BCMeshTransform+Interpolation.h in Headers */,
+				FEAB27CB549AC98AB49ED07BDCCE7706 /* BCMeshTransform.h in Headers */,
+				4D82D3125787B42A16658E1D7E7BED59 /* BCMeshTransformAnimation.h in Headers */,
+				62D6E351F485001BF915D61E9B33DFE5 /* BCMeshTransformView-umbrella.h in Headers */,
+				6AB4B588210108626EFB86E1933AA32D /* BCMeshTransformView.h in Headers */,
+				6578EA93253CF2751212A94FF507D0F7 /* BCMutableMeshTransform+Convenience.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		66887302E6EFE3AC9953246D7635EA1A /* Pods-SplitSkewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340600908D2F31004B7C2AE6B803FB58 /* Build configuration list for PBXNativeTarget "Pods-SplitSkewDemo" */;
+			buildPhases = (
+				E83354D3D84EEFC814AB36A7DA3B9FBE /* Headers */,
+				253A558F459A380088E1D5DF69CE893B /* Sources */,
+				8793FB5F7740A59DCB45B4B994FE8C91 /* Frameworks */,
+				6057BDD5D722DCA9E3A08FDE52D72012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C5C257C3BAE83CECA4D6EEAB31B0D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-SplitSkewDemo";
+			productName = "Pods-SplitSkewDemo";
+			productReference = 347F4513C4B3C78E3BF6069D6938B5D6 /* Pods_SplitSkewDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB18A4843CE0958161011345ECA1750C /* BCMeshTransformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD71BEFFAF220A6346CEE378DAB5D177 /* Build configuration list for PBXNativeTarget "BCMeshTransformView" */;
+			buildPhases = (
+				FD8E44C586D87342DE73A94F5BA87E20 /* Headers */,
+				37EAED94AE37BFFDAA35D4D8B1BA7BC2 /* Sources */,
+				B2501019AAEE10FEFD86AFE8747F7AE3 /* Frameworks */,
+				B729DCBE5AEA8150D6F77F374693FD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BCMeshTransformView;
+			productName = BCMeshTransformView;
+			productReference = A09F3535C11B50029ADECE88B02250B4 /* BCMeshTransformView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3DEC4BE5761963AFD12063925533E112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB18A4843CE0958161011345ECA1750C /* BCMeshTransformView */,
+				66887302E6EFE3AC9953246D7635EA1A /* Pods-SplitSkewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6057BDD5D722DCA9E3A08FDE52D72012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B729DCBE5AEA8150D6F77F374693FD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F8F1CFC01E4D29AD4290321DA604C0 /* BCMeshShader.fsh in Resources */,
+				373556618F9AE97A29A0B1B99CFE3EDF /* BCMeshShader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		253A558F459A380088E1D5DF69CE893B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8F77A613C36F8AFC546FF1876D271C /* Pods-SplitSkewDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37EAED94AE37BFFDAA35D4D8B1BA7BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004DE4903C03549C2271BB61E7B96417 /* BCMeshBuffer.m in Sources */,
+				5C587038C3C89922039CE949E91AA33E /* BCMeshContentView.m in Sources */,
+				BA3B4431CECE368BE8CC13ADA40C00E8 /* BCMeshShader.m in Sources */,
+				3D4DF4C66018C1314F097933E3E6E959 /* BCMeshTexture.m in Sources */,
+				526EE91D98E4CDD83BBBE8E885D51939 /* BCMeshTransform+Interpolation.m in Sources */,
+				606801B1CA30724B72525C4DFD315155 /* BCMeshTransform.mm in Sources */,
+				FE6C70DD3D4D7B09807CA13F50DAC6E2 /* BCMeshTransformAnimation.m in Sources */,
+				8DB4655B5DDEA6E4413F3E33E911ADF3 /* BCMeshTransformView-dummy.m in Sources */,
+				7BCA65B4F2C737320D6C7D73E806C03A /* BCMeshTransformView.m in Sources */,
+				3894DCC19C0C9923062BEC35C4ECA779 /* BCMutableMeshTransform+Convenience.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04C5C257C3BAE83CECA4D6EEAB31B0D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BCMeshTransformView;
+			target = DB18A4843CE0958161011345ECA1750C /* BCMeshTransformView */;
+			targetProxy = 2CC83A62D288AB18F307E47FCA11BA1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E3DA96AD3D4D052BE4DF99F1D7A6002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92D19AC44AD2B201BE8E7BABC41EBAF /* BCMeshTransformView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BCMeshTransformView/BCMeshTransformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BCMeshTransformView/BCMeshTransformView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BCMeshTransformView/BCMeshTransformView.modulemap";
+				PRODUCT_MODULE_NAME = BCMeshTransformView;
+				PRODUCT_NAME = BCMeshTransformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		641A7C2B2698748B61AF8E719BC6F20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB2DC6C96EADD8B5E9A7311BFB37B4C /* Pods-SplitSkewDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C83BCF28CFED10AD1A8AA9B42EE4A2C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F71454EAF151379D1B7C4392C84D78 /* BCMeshTransformView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BCMeshTransformView/BCMeshTransformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BCMeshTransformView/BCMeshTransformView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BCMeshTransformView/BCMeshTransformView.modulemap";
+				PRODUCT_MODULE_NAME = BCMeshTransformView;
+				PRODUCT_NAME = BCMeshTransformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0F7BAEFA0A84C502BA62AB010F348BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FD477226B33BBC2DFAC000BFFF0FEB /* Pods-SplitSkewDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		340600908D2F31004B7C2AE6B803FB58 /* Build configuration list for PBXNativeTarget "Pods-SplitSkewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641A7C2B2698748B61AF8E719BC6F20E /* Debug */,
+				E0F7BAEFA0A84C502BA62AB010F348BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD71BEFFAF220A6346CEE378DAB5D177 /* Build configuration list for PBXNativeTarget "BCMeshTransformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3DA96AD3D4D052BE4DF99F1D7A6002 /* Debug */,
+				C83BCF28CFED10AD1A8AA9B42EE4A2C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

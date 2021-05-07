@@ -11,8 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Quadrilateral)
 
-// Set's frame to bounding box of quad and applies transform
+- (void)splitTransformToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br splitId:(NSString *)splitId;
+
+// Phonily Set's frame to bounding box of quad and applies transform
 - (void)transformToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br;
+
+// Truely Set's part rect to bounding box of quad and applies transform
+- (void)truelyTransformRect:(CGRect)rect ToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br;
 
 @end
 

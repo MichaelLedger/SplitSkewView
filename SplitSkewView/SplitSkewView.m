@@ -68,6 +68,7 @@
 //        });
         
         // skew
+        split.layer.anchorPoint = CGPointZero;
         [split transformToFitQuadTopLeft:self.skews[i][0].CGPointValue
                                 topRight:self.skews[i][1].CGPointValue
                               bottomLeft:self.skews[i][2].CGPointValue
@@ -76,11 +77,14 @@
     }
 }
 
+// loading、drag need real time refresh, so it can't not make it!!!
+// the snap is too small which need to be optimized later.
 -(UIImage*)imageFromView:(UIView *) v rect:(CGRect) rect{
-    UIGraphicsBeginImageContextWithOptions(v.frame.size, NO, 1.0);//NO，YES 控制是否透明
+    CGFloat scale = [UIScreen mainScreen].scale;
+    UIGraphicsBeginImageContextWithOptions((CGSizeMake(v.frame.size.width * scale, v.frame.size.height * scale)), NO, scale);//NO，YES 控制是否透明
     [v.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    CGRect myImageRect = rect;
+    CGRect myImageRect = CGRectMake(rect.origin.x * scale, rect.origin.y * scale, rect.size.width * scale, rect.size.height * scale);
     CGImageRef imageRef = image.CGImage;
     CGImageRef subImageRef = CGImageCreateWithImageInRect(imageRef, myImageRect);
     

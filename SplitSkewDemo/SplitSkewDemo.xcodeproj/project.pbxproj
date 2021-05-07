@@ -17,9 +17,12 @@
 		6721C6EF26390E7900605715 /* UIView+Quadrilateral.m in Sources */ = {isa = PBXBuildFile; fileRef = 6721C6EE26390E7900605715 /* UIView+Quadrilateral.m */; };
 		6721C6F426390F6C00605715 /* SplitSkewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6721C6F326390F6C00605715 /* SplitSkewView.m */; };
 		6721C6F826392A0600605715 /* ImageWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721C6F726392A0600605715 /* ImageWriter.swift */; };
+		6769DB39263A8CAD000A3554 /* SelfSplitSkewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6769DB38263A8CAD000A3554 /* SelfSplitSkewView.m */; };
+		886609B96B19DD12206DCC96 /* Pods_SplitSkewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5254EAFF1D316AC0B89A18FA /* Pods_SplitSkewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5254EAFF1D316AC0B89A18FA /* Pods_SplitSkewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitSkewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6721C6CF26390DB500605715 /* SplitSkewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitSkewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6721C6D226390DB500605715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6721C6D326390DB500605715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +41,10 @@
 		6721C6F326390F6C00605715 /* SplitSkewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitSkewView.m; sourceTree = "<group>"; };
 		6721C6F626392A0600605715 /* SplitSkewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplitSkewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6721C6F726392A0600605715 /* ImageWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWriter.swift; sourceTree = "<group>"; };
+		6769DB37263A8CAD000A3554 /* SelfSplitSkewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfSplitSkewView.h; sourceTree = "<group>"; };
+		6769DB38263A8CAD000A3554 /* SelfSplitSkewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSplitSkewView.m; sourceTree = "<group>"; };
+		9FC3C78013091AAF8EDE400F /* Pods-SplitSkewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSkewDemo.debug.xcconfig"; path = "Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BADCB82D8536289702F5A217 /* Pods-SplitSkewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitSkewDemo.release.xcconfig"; path = "Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +52,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886609B96B19DD12206DCC96 /* Pods_SplitSkewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12B7AAC86918E6DE866CE7CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FC3C78013091AAF8EDE400F /* Pods-SplitSkewDemo.debug.xcconfig */,
+				BADCB82D8536289702F5A217 /* Pods-SplitSkewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6721C6C626390DB500605715 = {
 			isa = PBXGroup;
 			children = (
 				6721C6D126390DB500605715 /* SplitSkewDemo */,
 				6721C6D026390DB500605715 /* Products */,
+				12B7AAC86918E6DE866CE7CC /* Pods */,
+				89868A5829499402740C566F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +100,7 @@
 				6721C6DB26390DB500605715 /* Main.storyboard */,
 				6721C6DE26390DB600605715 /* Assets.xcassets */,
 				6721C6E026390DB600605715 /* LaunchScreen.storyboard */,
+				6721C6F626392A0600605715 /* SplitSkewDemo-Bridging-Header.h */,
 				6721C6E326390DB600605715 /* Info.plist */,
 				6721C6E426390DB600605715 /* main.m */,
 			);
@@ -94,10 +115,19 @@
 				6721C6EE26390E7900605715 /* UIView+Quadrilateral.m */,
 				6721C6F226390F6C00605715 /* SplitSkewView.h */,
 				6721C6F326390F6C00605715 /* SplitSkewView.m */,
-				6721C6F626392A0600605715 /* SplitSkewDemo-Bridging-Header.h */,
+				6769DB37263A8CAD000A3554 /* SelfSplitSkewView.h */,
+				6769DB38263A8CAD000A3554 /* SelfSplitSkewView.m */,
 			);
 			name = SplitSkewView;
 			path = ../../SplitSkewView;
+			sourceTree = "<group>";
+		};
+		89868A5829499402740C566F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5254EAFF1D316AC0B89A18FA /* Pods_SplitSkewDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6721C6E826390DB600605715 /* Build configuration list for PBXNativeTarget "SplitSkewDemo" */;
 			buildPhases = (
+				EB7F761033A053658F5A32D0 /* [CP] Check Pods Manifest.lock */,
 				6721C6CB26390DB500605715 /* Sources */,
 				6721C6CC26390DB500605715 /* Frameworks */,
 				6721C6CD26390DB500605715 /* Resources */,
+				CCB333C088FE390092EF411E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,12 +197,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CCB333C088FE390092EF411E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SplitSkewDemo/Pods-SplitSkewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7F761033A053658F5A32D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplitSkewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6721C6CB26390DB500605715 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6721C6DA26390DB500605715 /* ViewController.m in Sources */,
+				6769DB39263A8CAD000A3554 /* SelfSplitSkewView.m in Sources */,
 				6721C6F426390F6C00605715 /* SplitSkewView.m in Sources */,
 				6721C6D426390DB500605715 /* AppDelegate.m in Sources */,
 				6721C6F826392A0600605715 /* ImageWriter.swift in Sources */,
@@ -316,6 +391,7 @@
 		};
 		6721C6E926390DB600605715 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC3C78013091AAF8EDE400F /* Pods-SplitSkewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,7 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MichaelLedger.SplitSkewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../SplitSkewView/SplitSkewDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SplitSkewDemo/SplitSkewDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,6 +414,7 @@
 		};
 		6721C6EA26390DB600605715 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADCB82D8536289702F5A217 /* Pods-SplitSkewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,7 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MichaelLedger.SplitSkewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../SplitSkewView/SplitSkewDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SplitSkewDemo/SplitSkewDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

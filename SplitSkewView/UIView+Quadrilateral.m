@@ -9,12 +9,90 @@
 
 @implementation UIView (Quadrilateral)
 
-- (void)transformToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br
+- (void)splitTransformToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br splitId:(NSString *)splitId
 {
-    
     //NSAssert(CGPointEqualToPoint(self.layer.anchorPoint, CGPointZero),@"Anchor point must be (0,0)!");
     CGRect boundingBox = [[self class] boundingBoxForQuadTR:tr tl:tl bl:bl br:br];
     //self.frame = boundingBox;
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.backgroundColor = [UIColor orangeColor].CGColor;
+    layer.frame = CGRectMake(boundingBox.origin.x, boundingBox.origin.y, self.frame.size.width, self.frame.size.height);
+    
+    CGPoint frameTopLeft = boundingBox.origin;
+    
+    CATransform3D transform = [[self class] rectToQuad:self.bounds
+                                                quadTL:CGPointMake(tl.x-frameTopLeft.x, tl.y-frameTopLeft.y)
+                                                quadTR:CGPointMake(tr.x-frameTopLeft.x, tr.y-frameTopLeft.y)
+                                                quadBL:CGPointMake(bl.x-frameTopLeft.x, bl.y-frameTopLeft.y)
+                                                quadBR:CGPointMake(br.x-frameTopLeft.x, br.y-frameTopLeft.y)];
+    
+    CABasicAnimation* ba = [CABasicAnimation animationWithKeyPath:@"transform"];
+    ba.duration=0;
+    ba.speed = 1000;
+    ba.fillMode = kCAFillModeForwards;
+    ba.removedOnCompletion = NO;
+    ba.toValue= [NSValue valueWithCATransform3D:transform];
+    [layer removeAnimationForKey:splitId];
+    [layer addAnimation:ba forKey:splitId];
+    
+    CALayer *mainLayer = [CALayer layer];
+    [mainLayer addSublayer:layer];
+    [self.layer addSublayer:mainLayer];
+    
+//    [self.layer addSublayer:layer];
+    
+    //self.layer.transform = transform;
+}
+
+- (void)truelyTransformRect:(CGRect)rect ToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br;
+{
+//    NSAssert(CGPointEqualToPoint(self.layer.anchorPoint, CGPointZero),@"Anchor point must be (0,0)!");
+    self.layer.anchorPoint = CGPointZero;
+    CGRect boundingBox = [[self class] boundingBoxForQuadTR:tr tl:tl bl:bl br:br];
+//    self.frame = boundingBox;
+    self.frame = CGRectMake(boundingBox.origin.x, boundingBox.origin.y, self.frame.size.width, self.frame.size.height);
+    
+    CGPoint frameTopLeft = boundingBox.origin;
+
+    CATransform3D transform = [[self class] rectToQuad:boundingBox
+                                                quadTL:CGPointMake(tl.x-frameTopLeft.x, tl.y-frameTopLeft.y)
+                                                quadTR:CGPointMake(tr.x-frameTopLeft.x, tr.y-frameTopLeft.y)
+                                                quadBL:CGPointMake(bl.x-frameTopLeft.x, bl.y-frameTopLeft.y)
+                                                quadBR:CGPointMake(br.x-frameTopLeft.x, br.y-frameTopLeft.y)];
+    
+//    CABasicAnimation* ba = [CABasicAnimation animationWithKeyPath:@"transform"];
+//    ba.duration=0;
+//    ba.speed = 1000;
+//    ba.fillMode = kCAFillModeForwards;
+//    ba.removedOnCompletion = NO;
+//    ba.toValue= [NSValue valueWithCATransform3D:transform];
+//    [self.layer removeAnimationForKey:matrixKey];
+//    [self.layer addAnimation:ba forKey:matrixKey];
+    
+    //self.layer.transform = transform;
+    
+//    CGRect convertedRect = [self convertRect:rect fromView:self.superview];
+
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+//    maskLayer.bounds = rect;
+    maskLayer.path = path.CGPath;
+    self.layer.mask = maskLayer;
+    
+    self.layer.transform = CATransform3DConcat(self.layer.transform, transform);
+    
+//    self.layer.mask = nil;
+//    self.layer.anchorPoint = CGPointMake(0.5, 0.5);
+//    self.layer.frame = rect;
+//    self.layer.frame = self.frame;
+}
+
+- (void)transformToFitQuadTopLeft:(CGPoint)tl topRight:(CGPoint)tr bottomLeft:(CGPoint)bl bottomRight:(CGPoint)br
+{
+    
+    NSAssert(CGPointEqualToPoint(self.layer.anchorPoint, CGPointZero),@"Anchor point must be (0,0)!");
+    CGRect boundingBox = [[self class] boundingBoxForQuadTR:tr tl:tl bl:bl br:br];
+//    self.frame = boundingBox;
     self.frame = CGRectMake(boundingBox.origin.x, boundingBox.origin.y, self.frame.size.width, self.frame.size.height);
     
     CGPoint frameTopLeft = boundingBox.origin;
